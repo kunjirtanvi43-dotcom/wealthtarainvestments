@@ -15,9 +15,9 @@
 
     /* Top-left Get Started Button */
     .cta-button {
-      position: absolute;
-      top: 20px;
-      left: 20px;
+      position: fixed;
+      top: 16px;
+      left: 16px;
       padding: 10px 20px;
       background: #FFD700; /* gold */
       color: #000;         /* black text */
@@ -28,6 +28,7 @@
       text-decoration: none;
       cursor: pointer;
       transition: all 0.3s ease;
+      z-index: 1000;
     }
 
     .cta-button:hover {
@@ -36,28 +37,75 @@
     }
 
     .container {
-      padding: 100px 8%;
+      padding: 80px 5%;
     }
 
     h1 {
-      font-size: 60px;
+      font-size: 3rem;
       color: #FFFFFF;
+      margin-bottom: 20px;
+      line-height: 1.2;
     }
 
     .card {
       background: #111827;
-      padding: 30px;
-      margin-top: 30px;
-      border-radius: 20px;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 16px;
     }
 
     .card h2 {
       color: #D4AF37; /* gold accent */
+      font-size: 1.5rem;
+      margin-top: 0;
     }
 
     .card p {
       color: #E0E0E0;
-      line-height: 1.8;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    /* 📱 Responsive Adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 60px 4%;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .card h2 {
+        font-size: 1.3rem;
+      }
+
+      .card p {
+        font-size: 0.95rem;
+      }
+
+      .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .card h2 {
+        font-size: 1.1rem;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
