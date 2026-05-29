@@ -17,12 +17,12 @@
 
     /* Top-left Get Started Button */
     .cta-button {
-      position: fixed; /* stays visible even when scrolling */
-      top: 20px;
-      left: 20px;
+      position: fixed;
+      top: 16px;
+      left: 16px;
       padding: 10px 20px;
       background: #FFD700; /* gold */
-      color: #000;         /* black text */
+      color: #000;
       font-size: 1rem;
       font-weight: 600;
       border: none;
@@ -30,27 +30,46 @@
       text-decoration: none;
       cursor: pointer;
       transition: all 0.3s ease;
-      z-index: 1000; /* ensures it stays above other elements */
+      z-index: 1000;
     }
 
     .cta-button:hover {
-      background: #FFC107; /* darker gold on hover */
+      background: #FFC107;
       transform: scale(1.05);
     }
 
     .container {
-      padding: 120px 8%;
+      padding: 100px 6%;
+      max-width: 900px;
+      margin: auto;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 60px;
+      font-size: 3rem;
       margin-bottom: 20px;
+      line-height: 1.2;
     }
 
     p {
       color: #E0E0E0;
       line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    h3 {
+      color: #FFD700;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #1DA1F2; /* Twitter blue */
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     form {
@@ -60,22 +79,66 @@
 
     input, textarea {
       width: 100%;
-      padding: 15px;
+      padding: 14px;
       margin-bottom: 20px;
       border: none;
       border-radius: 10px;
       background: #111827;
       color: white;
+      font-size: 1rem;
     }
 
     button {
-      padding: 15px 35px;
+      padding: 14px 30px;
       border: none;
       background: #D4AF37;
       color: #0A1F44;
       border-radius: 40px;
       font-weight: 600;
       cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #FFC107;
+    }
+
+    /* 📱 Responsive Adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 80px 5%;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 60px 4%;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -94,8 +157,9 @@
     <h3>WHATSAPP: +91 - 9527210312 </h3>
     <br>
     Follow Mangesh N Kunjir on X -
-    <a href="https://x.com/mangeshnkunjir" target="_blank" rel="noopener noreferrer">x link</a>
+    <a href="https://x.com/mangeshnkunjir" target="_blank" rel="noopener noreferrer">Visit Profile</a>
   </div>
 
 </body>
 </html>
+
